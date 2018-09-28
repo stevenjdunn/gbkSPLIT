@@ -9,7 +9,7 @@ from Bio import SeqIO
 _verion_= "0.1"
 
 # Argparse Setup
-parser = argparse.ArgumentParser(description="A tool for splitting up .fasta files, creates a new file for each contig.")
+parser = argparse.ArgumentParser(description="A tool for extracting genes from a genbank file and writing to individual fastas.")
 parser.add_argument("-i", "--input", required=True, help="Path to file containing locus tags of interest.")
 parser.add_argument("-g", "--genbank", required=True, help="Path to genbank file.")
 parser.add_argument("-o", "--output", required=True, help="Path to output directory.")
